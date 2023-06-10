@@ -48,6 +48,7 @@ class MatchViewModel @Inject constructor(
 
     fun getMatches() {
         viewModelScope.launch {
+            _matchResponseState.emit(MatchResponseState.Loading)
             matchRepository.getMatches().collectLatest {
                 if (it.isSuccessful && it.body() != null) {
                     _matchResponseState.emit(MatchResponseState.Success(matchResponse = it.body()!!))

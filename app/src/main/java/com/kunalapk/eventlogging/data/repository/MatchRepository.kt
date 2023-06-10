@@ -5,6 +5,7 @@ import com.kunalapk.eventlogging.di.AppDispatchers
 import com.kunalapk.eventlogging.di.Dispatcher
 import com.kunalapk.eventlogging.model.BookTicketRequest
 import com.kunalapk.eventlogging.model.BookTicketResponse
+import com.kunalapk.eventlogging.model.EventData
 import com.kunalapk.eventlogging.model.MatchDetailResponse
 import com.kunalapk.eventlogging.model.MatchResponse
 import kotlinx.coroutines.CoroutineDispatcher
